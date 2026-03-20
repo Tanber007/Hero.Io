@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "image": "https://img.icons8.com/color/512/tiktok.png",
+    "description": "Short-form video platform for creative expression and viral trends.",
+    "size": 182,
+    "reviews": 15000000,
+    "ratingAvg": 4.4,
+    "downloads": 3000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 9000000 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "image": "https://img.icons8.com/color/512/instagram-new.png",
+    "description": "Photo and video sharing social networking service with Reels and Stories.",
+    "size": 45,
+    "reviews": 145000000,
+    "ratingAvg": 4.0,
+    "downloads": 2000000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000000 },
+      { "name": "2 star", "count": 5000000 },
+      { "name": "3 star", "count": 10000000 },
+      { "name": "4 star", "count": 30000000 },
+      { "name": "5 star", "count": 80000000 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "CapCut",
+    "companyName": "Bytedance",
+    "image": "https://img.icons8.com/color/512/capcut.png",
+    "description": "The official free Video Editor and Video Maker for TikTok.",
+    "size": 124,
+    "reviews": 7000000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 4500000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms",
+    "image": "https://img.icons8.com/color/512/whatsapp.png",
+    "description": "Simple, reliable, and private messaging and calling for free.",
+    "size": 38,
+    "reviews": 175000000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000000 },
+      { "name": "2 star", "count": 5000000 },
+      { "name": "3 star", "count": 15000000 },
+      { "name": "4 star", "count": 40000000 },
+      { "name": "5 star", "count": 100000000 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "ChatGPT",
+    "companyName": "OpenAI",
+    "image": "https://img.icons8.com/ios-filled/512/chatgpt.png",
+    "description": "Get instant answers, find inspiration, and be more productive with AI.",
+    "size": 25,
+    "reviews": 1200000,
+    "ratingAvg": 4.8,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 140000 },
+      { "name": "5 star", "count": 1000000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "image": "https://img.icons8.com/color/512/spotify--v1.png",
+    "description": "Listen to millions of songs, podcasts, and audiobooks.",
+    "size": 28,
+    "reviews": 30000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 20000000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "image": "https://img.icons8.com/color/512/discord-new-logo.png",
+    "description": "Talk, chat, hang out, and stay close with your friends and communities.",
+    "size": 95,
+    "reviews": 5000000,
+    "ratingAvg": 4.2,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 3000000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "X (Twitter)",
+    "companyName": "X Corp.",
+    "image": "https://img.icons8.com/ios-filled/512/x-logo.png",
+    "description": "The digital town square for real-time news and global conversation.",
+    "size": 42,
+    "reviews": 20000000,
+    "ratingAvg": 3.8,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "image": "https://img.icons8.com/color/512/netflix.png",
+    "description": "Award-winning TV shows, movies, documentaries, and more.",
+    "size": 75,
+    "reviews": 15000000,
+    "ratingAvg": 4.1,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "image": "https://img.icons8.com/color/512/telegram-app.png",
+    "description": "Pure instant messaging — simple, fast, secure, and synced across all your devices.",
+    "size": 40,
+    "reviews": 12000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Duolingo",
+    "companyName": "Duolingo",
+    "image": "https://img.icons8.com/color/512/duolingo.png",
+    "description": "Learn a new language with the world's most-downloaded education app.",
+    "size": 35,
+    "reviews": 18000000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 14000000 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Pinterest",
+    "companyName": "Pinterest",
+    "image": "https://img.icons8.com/color/512/pinterest.png",
+    "description": "Find and save creative ideas for cooking, home, style and more.",
+    "size": 32,
+    "reviews": 9000000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 6500000 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Reddit",
+    "companyName": "reddit inc.",
+    "image": "https://img.icons8.com/color/512/reddit.png",
+    "description": "The front page of the internet — dive into anything.",
+    "size": 60,
+    "reviews": 3500000,
+    "ratingAvg": 4.2,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 2000000 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Adobe Lightroom",
+    "companyName": "Adobe",
+    "image": "https://img.icons8.com/color/512/adobe-lightroom.png",
+    "description": "Professional photo editor and camera app to capture and edit stunning images.",
+    "size": 110,
+    "reviews": 1500000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Airbnb",
+    "companyName": "Airbnb",
+    "image": "https://img.icons8.com/color/512/airbnb.png",
+    "description": "Unforgettable travel experiences and places to stay around the world.",
+    "size": 65,
+    "reviews": 1200000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 800000 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Zoom",
+    "companyName": "zoom.us",
+    "image": "https://img.icons8.com/color/512/zoom.png",
+    "description": "Stay connected wherever you go – start or join a secure meeting.",
+    "size": 55,
+    "reviews": 3500000,
+    "ratingAvg": 4.1,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 1600000 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Canva",
+    "companyName": "Canva",
+    "image": "https://img.icons8.com/color/512/canva.png",
+    "description": "Graphic design, video editor, and logo maker in one app.",
+    "size": 30,
+    "reviews": 12000000,
+    "ratingAvg": 4.8,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 2250000 },
+      { "name": "5 star", "count": 9000000 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Shazam",
+    "companyName": "Apple Inc.",
+    "image": "https://img.icons8.com/color/512/shazam.png",
+    "description": "Identify music playing around you and explore what your favorite artists are Shazaming.",
+    "size": 22,
+    "reviews": 8000000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 1100000 },
+      { "name": "5 star", "count": 6500000 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "image": "https://img.icons8.com/color/512/microsoft-teams.png",
+    "description": "Your hub for teamwork in Microsoft 365.",
+    "size": 68,
+    "reviews": 6000000,
+    "ratingAvg": 4.4,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1300000 },
+      { "name": "5 star", "count": 3500000 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "LinkedIn",
+    "companyName": "LinkedIn",
+    "image": "https://img.icons8.com/color/512/linkedin.png",
+    "description": "Connect with your professional network and find your next job.",
+    "size": 42,
+    "reviews": 2500000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1300000 }
+    ]
+  }
+]

@@ -29,9 +29,10 @@ const Navbar = () => {
                         {link}
                     </ul>
                 </div>
-                <a className="text-4xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-                    <div onClick={() => setActive("Home")} className='flex'>
-                        <img className='h-[44px] w-[44px]' src={logo} alt="" /> <h3>HERO.IO</h3>
+                <a className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent cursor-pointer">
+                    <div onClick={() => setActive("Home")} className='flex items-center'>
+                        <img className='h-[30px] w-[30px] sm:h-[44px] sm:w-[44px] mr-2' src={logo} alt="Logo" />
+                        <h3>HERO.IO</h3>
                     </div>
                 </a>
             </div>
@@ -41,10 +42,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] px-6 py-3 rounded-xl">
-                    <div className='flex'>
-                        <img className='h-[33px] w-[33px] mr-2' src={gitHub} alt="" />
-                        <h3 className='text-xl font-semibold'>Contribute</h3>
+                <a className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] px-3 py-1 sm:px-6 py-3 rounded-xl">
+                    <div className='flex items-center justify-center'>
+                        <img className='h-[24px] w-[24px] sm:h-[34px] w-[34px] mr-2' src={gitHub} alt="" />
+                        <h3 className='textarea-sm sm:text-xl font-semibold'>Contribute</h3>
                     </div>
                 </a>
             </div>
