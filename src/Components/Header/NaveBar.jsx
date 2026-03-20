@@ -30,7 +30,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <a className="text-4xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-                    <div className='flex'>
+                    <div onClick={() => setActive("Home")} className='flex'>
                         <img className='h-[44px] w-[44px]' src={logo} alt="" /> <h3>HERO.IO</h3>
                     </div>
                 </a>
