@@ -3,9 +3,10 @@ import star from '../../assets/icon-ratings.png'
 import download from '../../assets/icon-downloads.png'
 
 const SingleTrendApp = ({ SingleTrendApp }) => {
-  console.log(SingleTrendApp);
+  // console.log(SingleTrendApp);
 
   const { title, image, ratingAvg, downloads } = SingleTrendApp;
+
 
   return (
     <div>
