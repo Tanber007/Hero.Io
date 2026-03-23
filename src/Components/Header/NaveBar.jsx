@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import logo from '../../assets/logo.png';
 import gitHub from '../../assets/github.png';
 import { Link, useLocation  } from 'react-router';
@@ -16,9 +15,9 @@ const Navbar = () => {
 
     const link = (
         <>
-            <Link to='/'><li><a className={`rounded-none border-b-2 transition-colors ${active === "Home" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Home</a></li></Link>
-            <Link to='/allapp'><li><a className={`rounded-none border-b-2 transition-colors ${active === "Apps" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Apps</a></li></Link>
-            <li><a className={`rounded-none border-b-2 transition-colors ${active === "Installation" ? "border-[#632EE3]  bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Installation</a></li>
+            <li><Link to='/' className={`rounded-none border-b-2 transition-colors ${active === "Home" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Home</Link></li>
+            <li><Link to='/allapp' className={`rounded-none border-b-2 transition-colors ${active === "Apps" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Apps</Link></li>
+            <li><Link to='/installation' className={`rounded-none border-b-2 transition-colors ${active === "Installation" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Installation</Link></li>
         </>
     );
 
@@ -38,12 +37,12 @@ const Navbar = () => {
                         {link}
                     </ul>
                 </div>
-                <a className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent cursor-pointer">
-                    <div onClick={() => setActive("Home")} className='flex items-center'>
+                <Link to="/" className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent cursor-pointer">
+                    <div className='flex items-center'>
                         <img className='h-[30px] w-[30px] sm:h-[44px] sm:w-[44px] mr-2' src={logo} alt="Logo" />
                         <h3>HERO.IO</h3>
                     </div>
-                </a>
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-x-2">

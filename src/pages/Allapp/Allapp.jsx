@@ -4,7 +4,7 @@ import SingleTrendApp from '../SingleTrendApp/SingleTrendApp';
 
 const Allapp = () => {
     const data = useLoaderData();
-    console.log(data);
+    // console.log(data);
 
     useEffect(()=>{
         window.scrollTo(0,0);
