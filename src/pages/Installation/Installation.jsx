@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router';
+import { getStoreApp } from '../../utility/addToDB';
+import Dwonlode from '../Dwonlode/Dwonlode';
 
 const Installation = () => {
+
+    const [readApp, setReadApp] = useState([]);
+    const data = useLoaderData();
+    
+    useEffect(()=>{
+        const storedAppData = getStoreApp();
+        const stringstoredAppData = storedAppData.map(id => parseInt(id))
+        const myRedList = data.filter(app=> stringstoredAppData.includes(app.id));
+        setReadApp(myRedList)
+    } ,[])
+
     return (
         <>
         <section>
@@ -12,7 +26,11 @@ const Installation = () => {
 
         <section className='w-11/12 mx-auto my-6'>
             <div>
-                <h3>Apps Found</h3>
+                <h3 className='text-l sm:text-xl font-semibold mb-3 sm:mb-8 tracking-tight'>{readApp.length}Apps Found</h3>
+
+                {
+                    readApp.map(downlode=><Dwonlode key={downlode.id} downlode={downlode}></Dwonlode>)
+                }
 
             </div>
         </section>

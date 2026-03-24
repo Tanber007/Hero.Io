@@ -15,7 +15,7 @@ const Navbar = () => {
 
     const link = (
         <>
-            <li><Link to='/' className={`rounded-none border-b-2 transition-colors ${active === "Home" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Home</Link></li>
+            <li><Link to='/' className={`rounded-none border-b-2 transition-colors ${active === "/" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Home</Link></li>
             <li><Link to='/allapp' className={`rounded-none border-b-2 transition-colors ${active === "Apps" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Apps</Link></li>
             <li><Link to='/installation' className={`rounded-none border-b-2 transition-colors ${active === "Installation" ? "border-[#632EE3] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent" : "border-transparent"}`}>Installation</Link></li>
         </>

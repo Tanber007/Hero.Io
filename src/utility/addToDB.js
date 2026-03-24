@@ -24,4 +24,4 @@ const addToStoreDb = (id) =>{
     }
 }
 
-export {addToStoreDb}
+export {addToStoreDb, getStoreApp}
