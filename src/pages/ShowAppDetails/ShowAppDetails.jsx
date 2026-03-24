@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import downloadsicon from '../../assets/icon-downloads.png';
 import staricon from '../../assets/icon-ratings.png';
 import reviewicon from '../../assets/icon-review.png';
 import { ToastContainer, toast } from 'react-toastify';
-import { addToStoreDb } from '../../utility/addToDB';
+import { addToStoreDb, getStoreApp } from '../../utility/addToDB';
 
 
 const formatNumber = (num) => {
@@ -21,6 +21,13 @@ const ShowAppDetails = () => {
     const [isInstalled, setIsInstalled] = useState(false);
     const data = useLoaderData();
     const singleApp = data.find(app => app.id === appId);
+
+    useEffect(() => {
+        const storedApps = getStoreApp();
+        if (storedApps.includes(id) || storedApps.includes(parseInt(id))) {
+            setIsInstalled(true);
+        }
+    }, []);
 
 
     const { title, companyName, image, description, size, reviews, ratingAvg, downloads, ratings } = singleApp;

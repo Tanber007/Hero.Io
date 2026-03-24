@@ -21,12 +21,12 @@ const Installation = () => {
 
     const handleShort = (type) =>{
         setSort(type);
-        if(type === "Downlode"){
+        if(type === "low"){
             const sortedByDownlode = [...readApp].sort((a,b) => a.downloads - b.downloads);
             setReadApp(sortedByDownlode);
         }
-        if(type === "Ratings"){
-            const sortedByDownlode = [...readApp].sort((a,b) => a.ratingAvg - b.ratingAvg);
+        if(type === "high"){
+            const sortedByDownlode = [...readApp].sort((a,b) => b.downloads - a.downloads);
             setReadApp(sortedByDownlode);
         }
     }
@@ -46,8 +46,8 @@ const Installation = () => {
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn p-2 w-full m-1">Short By size:{sort?sort:""} <IoIosArrowDropdownCircle /></div>
                         <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                            <li><a onClick={() =>handleShort("Downlode")}>Downlode</a></li>
-                            <li><a onClick={() =>handleShort("Ratings")}>Ratings</a></li>
+                            <li><a onClick={() =>handleShort("low")}>low to high</a></li>
+                            <li><a onClick={() =>handleShort("high")}>high to low</a></li>
                         </ul>
                     </div>
                 </div>

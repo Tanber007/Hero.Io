@@ -52,8 +52,10 @@ const Navbar = () => {
             <div className="navbar-end">
                 <a className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] px-3 py-1 sm:px-6 py-3 rounded-xl">
                     <div className='flex items-center justify-center'>
-                        <img className='h-[24px] w-[24px] sm:h-[34px] w-[34px] mr-2' src={gitHub} alt="" />
+                        <a href="https://github.com/Tanber007/Hero.Io">
+                            <img className='h-[24px] w-[24px] sm:h-[34px] w-[34px] mr-2' src={gitHub} alt="" />
                         <h3 className='textarea-sm sm:text-xl font-semibold'>Contribute</h3>
+                        </a>
                     </div>
                 </a>
             </div>
