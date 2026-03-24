@@ -5,7 +5,7 @@ import { Link, useLocation  } from 'react-router';
 const Navbar = () => {
     const location = useLocation();
 
-    let active = "Home";
+    let active = "/";
     if (location.pathname === "/allapp") {
         active = "Apps";
     } 

@@ -5,7 +5,7 @@ import downloadsicon from '../../assets/icon-downloads.png';
 import staricon from '../../assets/icon-ratings.png';
 import reviewicon from '../../assets/icon-review.png';
 import { ToastContainer, toast } from 'react-toastify';
-
+import { addToStoreDb } from '../../utility/addToDB';
 
 
 const formatNumber = (num) => {
@@ -25,6 +25,11 @@ const ShowAppDetails = () => {
 
     const { title, companyName, image, description, size, reviews, ratingAvg, downloads, ratings } = singleApp;
     const chartData = ratings ? [...ratings].reverse() : [];
+
+    // set local store fro downlode
+    const handleDownlode = id =>{
+        addToStoreDb(id)
+    }
 
     return (
         <div className="bg-[#f8f9fa] min-h-screen py-10">
@@ -65,6 +70,7 @@ const ShowAppDetails = () => {
                         
                         <button 
                             onClick={() => {
+                                handleDownlode(id);
                                 setIsInstalled(true);
                                 toast.success('Installation successfull!');
                             }}
