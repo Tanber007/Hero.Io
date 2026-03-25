@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import SingleTrendApp from '../SingleTrendApp/SingleTrendApp';
+import AppError from '../AppError/AppError';
 
 const Allapp = () => {
     const data = useLoaderData();
@@ -9,8 +10,8 @@ const Allapp = () => {
     const [search, setSearch] = useState('');
     const filteredApps = data.filter(app => app.title.toLowerCase().includes(search.toLowerCase()));
 
-    useEffect(()=>{
-        window.scrollTo(0,0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, [])
 
     return (
@@ -42,12 +43,22 @@ const Allapp = () => {
                         <input value={search} onChange={(e) => setSearch(e.target.value)} type="search" required placeholder="Search Apps" />
                     </label>
                 </div>
+
                 {/* All App Card */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {
-                        filteredApps.map(singleApp=> <SingleTrendApp key={singleApp.id} SingleTrendApp={singleApp}></SingleTrendApp>)
-                    }
-                </div>
+                {
+                    filteredApps.length === 0 ? (
+                        <div className="mt-10">
+                            <AppError></AppError>
+                        </div>
+                    ) : (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            {
+                                filteredApps.map(singleApp => <SingleTrendApp key={singleApp.id} SingleTrendApp={singleApp}></SingleTrendApp>)
+                            }
+                        </div>
+                        )
+                }
+
             </section>
         </>
     );

@@ -15,7 +15,6 @@ export const router = createBrowserRouter([
       {
         index: true,
         loader: ()=>fetch('/data.json'),
-        errorElement: <ErrorPage></ErrorPage>,
         path: '/',
         Component: Home
       },
@@ -33,6 +32,10 @@ export const router = createBrowserRouter([
         path: '/installation',
         loader: ()=>fetch('/data.json'),
         Component: Installation
+      },
+      {
+        path: "*",
+        element: <ErrorPage></ErrorPage>
       }
     ]
   },
