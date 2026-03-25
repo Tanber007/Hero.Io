@@ -38,9 +38,7 @@ const HeroSection = () => {
                 <section>
                     <div className="flex items-center justify-center bg-gradient-to-br from-[#8a5cf5] to-[#a259ff] py-12 sm:py-20 px-4">
                         <div className="max-w-6xl w-full text-center text-white">
-                            <h2 className="text-3xl sm:text-5xl font-bold mb-12 sm:mb-16 tracking-tight">
-                                Trusted By Millions, Built For You
-                            </h2>
+                            <h2 className="text-3xl sm:text-5xl font-bold mb-12 sm:mb-16 tracking-tight">Trusted By Millions, Built For You</h2>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 items-start">
                                 <div className="flex flex-col items-center">

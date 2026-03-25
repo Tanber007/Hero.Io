@@ -1,27 +1,34 @@
-const getStoreApp =()=>{
+const getStoreApp = () => {
     const storedApps = localStorage.getItem("readList");
 
-    if(storedApps){
+    if (storedApps) {
         const storedData = JSON.parse(storedApps);
         return storedData;
     }
-    else{
+    else {
         return [];
     }
 }
 
-const addToStoreDb = (id) =>{
+const addToStoreDb = (id) => {
 
     const storedData = getStoreApp();
 
-    if(storedData.includes(id)){
+    if (storedData.includes(id)) {
         alert("It alredy exist");
     }
-    else{
+    else {
         storedData.push(id);
         const data = JSON.stringify(storedData);
         localStorage.setItem('readList', data);
     }
 }
 
-export {addToStoreDb, getStoreApp}
+const removeFromStoreDb = (id) => {
+    const storedData = getStoreApp();
+    const updatedData = storedData.filter(appId => String(appId) !== String(id));
+    const data = JSON.stringify(updatedData);
+    localStorage.setItem('readList', data);
+}
+
+export { addToStoreDb, getStoreApp, removeFromStoreDb }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
-import { getStoreApp } from '../../utility/addToDB';
+import { getStoreApp, removeFromStoreDb } from '../../utility/addToDB';
 import Dwonlode from '../Dwonlode/Dwonlode';
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 
@@ -31,6 +31,13 @@ const Installation = () => {
         }
     }
 
+    // remove data from DB
+    const handleUninstall = (id) =>{
+        removeFromStoreDb(id);
+        const remainingApp = readApp.filter(app => app.id !== id);
+        setReadApp(remainingApp);
+    }
+
     return (
         <>
             <section>
@@ -53,7 +60,7 @@ const Installation = () => {
                 </div>
                 <div>
                     {
-                        readApp.map(downlode => <Dwonlode key={downlode.id} downlode={downlode}></Dwonlode>)
+                        readApp.map(downlode => <Dwonlode key={downlode.id} handleUninstall={handleUninstall} downlode={downlode}></Dwonlode>)
                     }
                 </div>
             </section>

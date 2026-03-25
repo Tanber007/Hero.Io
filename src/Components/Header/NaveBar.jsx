@@ -1,6 +1,6 @@
 import logo from '../../assets/logo.png';
 import gitHub from '../../assets/github.png';
-import { Link, useLocation  } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
 const Navbar = () => {
     const location = useLocation();
@@ -8,7 +8,7 @@ const Navbar = () => {
     let active = "/";
     if (location.pathname === "/allapp") {
         active = "Apps";
-    } 
+    }
     else if (location.pathname === "/installation") {
         active = "Installation";
     }
@@ -50,11 +50,22 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] px-3 py-1 sm:px-6 py-3 rounded-xl">
-                    <div className='flex items-center justify-center'>
-                        <a href="https://github.com/Tanber007/Hero.Io">
-                            <img className='h-[24px] w-[24px] sm:h-[34px] w-[34px] mr-2' src={gitHub} alt="" />
-                        <h3 className='textarea-sm sm:text-xl font-semibold'>Contribute</h3>
+                <a className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] px-2 py-1 sm:px-4 py-2 rounded-xl">
+                    <div className="flex items-center justify-cente">
+                        <a
+                            href="https://github.com/Tanber007/Hero.Io"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                        >
+                            <img
+                                className="h-6 w-6 sm:h-8 sm:w-8 transition-transform group-hover:scale-110"
+                                src={gitHub}
+                                alt="GitHub logo"
+                            />
+                            <h3 className="text-sm sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
+                                Contribute
+                            </h3>
                         </a>
                     </div>
                 </a>
